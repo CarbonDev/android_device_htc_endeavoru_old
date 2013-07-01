@@ -4,8 +4,9 @@ $(call inherit-product, vendor/carbon/config/common_gsm.mk)
 # Release name
 PRODUCT_RELEASE_NAME := endeavoru
 
-# OVERLAY_TARGET adds overlay asset source
-OVERLAY_TARGET := pa_xhdpi
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 # Inherit some common Carbon stuff.
 $(call inherit-product, vendor/carbon/config/common_phone.mk)
