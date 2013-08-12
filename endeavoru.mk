@@ -39,7 +39,6 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 # Init files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ramdisk/fstab.endeavoru:root/fstab.endeavoru \
-    $(LOCAL_PATH)/ramdisk/init:root/init \
     $(LOCAL_PATH)/ramdisk/init.endeavoru.rc:root/init.endeavoru.rc \
     $(LOCAL_PATH)/ramdisk/init.endeavoru.usb.rc:root/init.endeavoru.usb.rc \
     $(LOCAL_PATH)/ramdisk/init.rc:root/init.rc \
@@ -94,10 +93,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/usr/share/alsa/pcm/surround50.conf:system/usr/share/alsa/pcm/surround50.conf \
     $(LOCAL_PATH)/prebuilt/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
     $(LOCAL_PATH)/prebuilt/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf
-
-# Vold fstab
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab
 
 # media config xml file
 PRODUCT_COPY_FILES += \
@@ -197,7 +192,8 @@ PRODUCT_PACKAGES += \
     TQS_D_1.7.ini \
     crda \
     regulatory.bin \
-    calibrator \
-    wlconf
+    calibrator
+
+#    wlconf
 
 $(call inherit-product-if-exists, vendor/htc/endeavoru/endeavoru-vendor.mk)
