@@ -72,7 +72,6 @@ endif
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/htc/endeavoru
 TARGET_KERNEL_CONFIG := cyanogenmod_endeavoru_defconfig
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.6/bin/arm-eabi-
 
 # Building wifi modules
 TARGET_MODULES_SOURCE := "kernel/htc/endeavoru/drivers/net/wireless/compat-wireless_R5.SP2.03"
