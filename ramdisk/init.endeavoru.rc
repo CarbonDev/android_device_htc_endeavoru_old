@@ -41,7 +41,6 @@ on fs
     chmod 0660 /rca/calib.nvm
     chmod 0660 /rca
     chmod 0660 /rfs
-    start pollyd
 
 on post-fs-data
     # change back to bluetooth from system
@@ -260,12 +259,6 @@ on boot
     chown root system /sys/class/timed_output/vibrator/dutycycle
     chmod 0664 /sys/class/timed_output/vibrator/dutycycle
     restorecon /sys/class/timed_output/vibrator/dutycycle
-
-# pollyd (respect & thanks to Adrian Ulrich <adrian@blinkenlights.ch> )
-service pollyd /system/bin/pollyd
-    class main
-    user root
-    group root
 
 # Compass/accelerometer daemon
 service akmd /system/bin/akmd
