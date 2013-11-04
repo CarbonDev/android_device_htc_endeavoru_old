@@ -1,3 +1,5 @@
-cm-10.1 device tree for HTC One X (endeavoru)
+cm-10.2 device tree for HTC One X (endeavoru)
 
 Rebased for Carbon
+
+
