@@ -3,14 +3,14 @@
     "remote":       "cm",
     "repository":   "CyanogenMod/android_kernel_htc_endeavoru",
     "target_path":  "kernel/htc/endeavoru",
-    "revision":     "cm-11.0",
+    "revision":     "cm-11.0"
   },
   {
-    "repository":  "android_device_htc_tegra3-common",
-    "target_path": "device/htc/tegra3-common",
+    "repository":  "CarbonDev/android_device_htc_tegra3-common",
+    "target_path": "device/htc/tegra3-common"
   },
   {
-    "repository":  "proprietary_vendor_htc",
+    "repository":  "CarbonDev/proprietary_vendor_htc",
     "target_path": "vendor/htc"
   }
 ]
