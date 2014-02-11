@@ -1,4 +1,4 @@
-## Specify phone tech before including full_phone
+# Specify phone tech before including full_phone
 $(call inherit-product, vendor/carbon/config/common_gsm.mk)
 
 # Release name
